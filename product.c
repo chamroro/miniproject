@@ -82,8 +82,7 @@ int loadData(Product *p){ // 파일에서 불러오기
     return i;
 }
 
-int saveData(Product *p, int count)
-{ //파일에 저장
+int saveData(Product *p, int count){ //파일에 저장
     FILE *fp = fopen("product.txt", "w");
     for (int i = 0; i < count; i++)
     {
