@@ -43,7 +43,7 @@ void searchPrice(Product *p, int count){ //가격대 검색
     return;
 }
 
-void searchDeliver(Product *p, int count){ //별점기준 검색
+void searchDeliver(Product *p, int count){ //배송 방법 검색
     int s1;
     printf("검색할 배송목록은? (1:새벽배송 /2:택배배송) ");
     scanf("%d", &s1);
