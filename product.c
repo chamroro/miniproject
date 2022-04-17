@@ -17,7 +17,7 @@ int selectMenu(){
     return menu;
 }
 
-int addProduct(Product *p){ // 제품을 추가하는 함수 2
+int addProduct(Product *p){ // 제품을 추가하는 함수 
     printf("제품의 이름은? ");
     scanf(" %s", p->name);
     printf("제품의 중량은? ");
@@ -44,7 +44,7 @@ int selectDataNo(int count){
     return no;
 }
 
-int updateProduct(Product *p){ //제품 수정 3
+int updateProduct(Product *p){ //제품 수정 
     printf("제품의 새 이름은? ");
     scanf("%s", p->name);
     printf("제품의 새 중량은? ");
@@ -83,7 +83,7 @@ int loadData(Product *p){ // 파일에서 불러오기
 }
 
 int saveData(Product *p, int count)
-{ //파일에 저장5
+{ //파일에 저장
     FILE *fp = fopen("product.txt", "w");
     for (int i = 0; i < count; i++)
     {
