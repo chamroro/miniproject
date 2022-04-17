@@ -1,6 +1,6 @@
 #include "manager.h"
 
-int listProduct(Product *p, int count){ //전체 등록된 제품 리스트 출력1
+int listProduct(Product *p, int count){ //전체 등록된 제품 리스트 출력
     int i = 0;
     printf("NO 제품명 중량 가격 제품설명 배송\n ");
     for (i = 0; i < count; i++){
@@ -13,7 +13,7 @@ int listProduct(Product *p, int count){ //전체 등록된 제품 리스트 출�
 
 }
 
-void searchProduct(Product *p, int count){ //제품이름 검색6
+void searchProduct(Product *p, int count){ //제품이름 검색
     char sname[20];
     printf("검색할 이름은? ");
     scanf(" %s", sname);
@@ -28,9 +28,9 @@ void searchProduct(Product *p, int count){ //제품이름 검색6
     return;
 }
 
-void searchPrice(Product *p, int count){ //가격대 검색7
+void searchPrice(Product *p, int count){ //가격대 검색
     int w1, w2;
-    printf("검색할 가격대는?(00원 이상 00원 이하)");
+    printf("검색할 가격대는?(?원 이상 ?원 이하)");
     scanf(" %d %d", &w1, &w2);
     printf("제품명 중량 가격 제품설명 배송\n ");
     for (int i = 0; i < count; i++){
@@ -43,7 +43,7 @@ void searchPrice(Product *p, int count){ //가격대 검색7
     return;
 }
 
-void searchDeliver(Product *p, int count){ //별점기준 검색8
+void searchDeliver(Product *p, int count){ //별점기준 검색
     int s1;
     printf("검색할 배송목록은? (1:새벽배송 /2:택배배송) ");
     scanf("%d", &s1);
