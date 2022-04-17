@@ -91,6 +91,7 @@ int saveData(Product *p, int count){ //파일에 저장
         fprintf(fp, "%s %s %d %s %d\n",p[i].name, p[i].weight, p[i].price, p[i].desc, p[i].deliver);
     }
     fclose(fp);
+
     return 1;
 }
 
